@@ -1,3 +1,53 @@
 input:focus{
     outline: none;
 }
+
+.triangle{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-right: 16px solid $primary;
+        border-top: 16px solid transparent;
+    }
+    &:hover{
+        &::after{
+        border-right: 16px solid $black;
+        border-top: 16px solid transparent;
+        }
+    }
+}
+
+.writing-vertical{
+    writing-mode: vertical-lr;
+}
+
+.btn-more{
+    border: 1px solid $dark;
+    padding: 8px 48px;
+    position: relative;
+    transition: all .3s;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-right: 16px solid $primary;
+        border-top: 16px solid transparent;
+        transition: all .3s;
+    }
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        &::after{
+        border-right: 16px solid $dark;
+        border-top: 16px solid transparent;
+        }
+    }
+}

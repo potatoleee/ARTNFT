@@ -1,5 +1,78 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.recommend{
+  background-image: url('../images/art01.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+  @include phone{
+    height: 238px;
+  }
+  .recommend__text{
+    p{
+        &:nth-child(1){
+            font-size: 48px;
+            line-height: 50px;
+            
+        }
+        &:nth-child(2){
+          line-height: 26px;
+          
+      }
+    }
 }
+
+}
+.recommend__content{
+  a{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    // @include phone{
+    //   position: initial;
+    // }
+  }
+}
+
+.recommend__img{
+ 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 340px;
+  @include phone{
+    height: 372px;
+  }
+}
+.recommend__2{
+  background-image: url('../images/art02.jpg');
+}
+.recommend__3{
+  background-image: url('../images/art21.jpg');
+}
+.recommend__item{
+  border-left: 1px solid $dark;
+  border-right: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+  @include phone{
+    border-left: 0px solid $dark;
+    border-right: 0px solid $dark;
+    border-bottom: 2px solid $dark;
+    
+  }
+  .recommend__title{
+    font-size: 32px;
+    @include phone{
+      font-size: 24px;
+    }
+  }
+  a{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    @include phone{
+      right: 12px;
+    }
+    
+  }
+}
+

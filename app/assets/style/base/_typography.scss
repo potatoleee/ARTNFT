@@ -6,3 +6,12 @@
 .font-paytoneOne{
     font-family: 'Paytone One', sans-serif;
 }
+
+.fs-subTitle{
+    font-size: 48px;
+    line-height: 70px;
+    @include phone{
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
