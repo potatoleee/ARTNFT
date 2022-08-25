@@ -6,55 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+     <!-- swiper -->
+     <link
+     rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- main css -->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <header class="header fixed-top">
+      <nav class="border-bottom position-relative">
+        <div class="container-xxl d-flex justify-content-between">
+          <div class="logo">
+            <h1 class="py-lg-5 py-3" >
+              <a href="index.html">ART NFT</a>
+            </h1>
+          </div>
+        <ul class="nav__content__pc d-lg-flex d-none ">
+          <li class="py-6 px-7 border-start">
+            <div class="nav__search">
+              <input class="p-0 border-0 bg-light"id="search" type="text" placeholder="搜尋作品名稱、藝術家名稱">
+              <label for="search"><i class="fa-solid fa-magnifying-glass fs-3"></i></label>
+            </div>
+          </li>
+          <li class=" border-start"><a class="px-7 py-6 d-block " href="explore.html">探索</a></li>
+          <li class=" border-start"><a class="px-7 py-6 d-block"  href="marketValue.html">市值</a></li>
+          <li class="border-start"><i class="fa-solid fa-wallet ps-7 py-6 fs-4 "></i></li>
+        </ul>
+        
+     
+          <div class="nav__content__mobile d-flex align-items-center gap-4 d-lg-none">
+              <i class="fa-solid fa-magnifying-glass fs-5"></i>
+              <i id="nav__buger" class=" fa-solid fa-bars"></i>
+              <i id="nav__close" class="fa-solid fa-xmark "></i>
+              <ul class="nav__content__mobile__menu">
+                <li class="text-center container"><a  class="fs-5 fw-bold py-4 border-bottom" href="explore.html">探索</a></li>
+                <li class="text-center  "><a class="fs-5 fw-bold py-4 "  href="marketValue.html">市值</a></li>
+                <li class="text-center container"><a class="fs-5 bg-primary "  href="#">連結錢包</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
+           </div>
+         </div>
+      </nav>
+      
+    </header>
+   
+    <main>
     <%- contents %>
+    </main>
 
     <footer class="footer">
       footer
     </footer>
 
+     <!-- awsomeicon -->
+     <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+      <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+       <!-- swiper -->
     <script src="./assets/js/vendors.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- main js -->
     <script src="./assets/js/all.js"></script>
   </body>
 
