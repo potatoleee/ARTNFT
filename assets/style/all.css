@@ -14922,6 +14922,18 @@ input:focus {
   }
 }
 
+.fs-title {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+@media (max-width: 767px) {
+  .fs-title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
 main {
   margin-top: 106px;
 }
@@ -15042,10 +15054,10 @@ main {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 340px;
+  height: 400px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .recommend__img {
     height: 372px;
   }
@@ -15093,6 +15105,210 @@ main {
   .recommend__item a {
     right: 12px;
   }
+}
+
+.ranking__no {
+  position: relative;
+}
+
+.ranking__no::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Paytone One', sans-serif;
+  background-color: #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  z-index: 4;
+}
+
+.ranking__no--1::before {
+  content: "1";
+}
+
+.ranking__no--2::before {
+  content: "2";
+}
+
+.ranking__no--3::before {
+  content: "3";
+}
+
+.ranking__img {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.ranking__img--lg {
+  height: 374px;
+  position: relative;
+}
+
+.ranking__img--lg::before {
+  content: "";
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  background-color: transparent;
+}
+
+.ranking__img--lg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-top: 16px solid transparent;
+}
+
+.ranking__img--lg:hover::before {
+  content: "";
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ranking__img--lg:hover::after {
+  border-right: 16px solid #000;
+  border-top: 16px solid transparent;
+}
+
+.ranking__img--sm {
+  min-width: 87px;
+  height: 92px;
+  position: relative;
+}
+
+.ranking__img--sm::after {
+  position: absolute;
+  content: "";
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  background-color: transparent;
+  color: transparent;
+  font-size: 18px;
+}
+
+.ranking__img--sm::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  display: none;
+  /*  三角形  */
+  width: 0;
+  height: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid transparent;
+  z-index: 3;
+}
+
+.ranking__img--sm:hover::after {
+  content: 'more';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Squada One', cursive;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.ranking__img--sm:hover::before {
+  display: block;
+}
+
+.ranking__img--1 {
+  background-image: url("../images/art04.jpg");
+}
+
+.ranking__img--2 {
+  background-image: url("../images/art05.jpg");
+}
+
+.ranking__img--3 {
+  background-image: url("../images/art06.jpg");
+}
+
+.ranking__img--4 {
+  background-image: url("../images/art13.jpg");
+}
+
+.ranking__img--5 {
+  background-image: url("../images/art07.jpg");
+}
+
+.ranking__img--6 {
+  background-image: url("../images/art08.jpg");
+}
+
+.ranking__more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: transparent;
+  background-color: transparent;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.ranking__more::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-top: 16px solid transparent;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.ranking__more:hover {
+  background-color: #E6553B;
+  color: #fff;
+}
+
+.ranking__more:hover::after {
+  border-right: 16px solid #000;
+  border-top: 16px solid transparent;
 }
 
 /*# sourceMappingURL=all.css.map */
