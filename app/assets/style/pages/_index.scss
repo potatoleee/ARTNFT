@@ -38,8 +38,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 340px;
-  @include phone{
+  //因為字太多會推擠先把高度拉高
+  height: 400px;
+  @include pad{
     height: 372px;
   }
 }
@@ -75,4 +76,193 @@
     
   }
 }
+.ranking{
+  &__no{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: 'Paytone One', sans-serif;
+      background-color: $white;
+      border-right: 1px solid $dark;
+      border-bottom: 1px solid $dark;
+      width: 48px;
+      height: 48px;
+      font-size: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      z-index: 4;
+    }
+    &--1{
+      &::before{
+        content: "1";
+      }
+    }
+    &--2{
+      &::before{
+        content: "2";
+      }
+    }
+    &--3{
+      &::before{
+        content: "3";
+      }
+    }
+  }
+  
+
+  &__img{
+    background-repeat: no-repeat;
+    background-position: top ;
+    background-size: cover;
+   
+
+    &--lg{
+      height: 374px;
+      position: relative;
+      &::before{
+        content: "";
+        transition: all .5s;
+        background-color:transparent;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-right: 16px solid transparent;
+        border-top: 16px solid transparent;
+    }
+      
+      &:hover{
+        &::before{
+          content: "";
+          background-color: black;
+          opacity: 0.5;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          
+        }
+        &::after{
+          border-right: 16px solid $black;
+          border-top: 16px solid transparent;
+          }
+        
+      }
+
+    }
+
+    &--sm{
+      min-width: 87px;
+      height: 92px;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        transition:all .5s;
+        background-color: transparent;
+        color:transparent;
+        font-size: 18px;
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        right:0;
+        bottom:0;
+        display: none;
+        /*  三角形  */
+        width: 0;
+        height: 0;
+        border-right: 16px solid #E6553B;
+        border-top: 16px solid transparent;
+        z-index: 3;
+      
+      }
+      &:hover{
+        &::after{
+          content: 'more';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color:$dark;
+          opacity: 0.7;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Squada One', cursive;
+          font-size: 18px;
+          line-height: 1;
+        }
+        &::before{
+          display: block;
+        }
+      }
+    }
+    
+
+    &--1{
+      background-image: url('../images/art04.jpg');
+    }
+    &--2{
+      background-image: url('../images/art05.jpg');
+    }
+    &--3{
+      background-image: url('../images/art06.jpg');
+    }
+    &--4{
+      background-image: url('../images/art13.jpg');
+    }
+    &--5{
+      background-image: url('../images/art07.jpg');
+    }
+    &--6{
+      background-image: url('../images/art08.jpg');
+    }
+  }
+
+  
+}
+
+.ranking__more{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: transparent;
+    background-color: transparent;
+    transition: all .5s;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-right: 16px solid transparent;
+      border-top: 16px solid transparent;
+      transition: all .3s;
+     
+    }
+     &:hover{
+      background-color: $primary;
+      color: $white;
+      &::after{
+      border-right: 16px solid $dark;
+      border-top: 16px solid transparent;
+      }
+    }
+}
+
+
+
 
