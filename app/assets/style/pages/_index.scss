@@ -288,6 +288,16 @@
   transform: scale(1);
 }
 
+.swiper-backface-hidden .swiper-slide{
+
+  transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+.swiper-android .swiper-slide, .swiper-wrapper{
+  transform: translate3d(0px,0,0);
+}
+
 
 // 頁籤客製化
 .swiper-pagination-bullet{
