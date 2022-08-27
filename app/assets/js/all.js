@@ -17,7 +17,7 @@ $(function() {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
     spaceBetween: 0,
 	  centeredSlides: true,
 
@@ -37,4 +37,14 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+  
+  // Responsive breakpoints
+  breakpoints: {
+    
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    }
+  }
 });

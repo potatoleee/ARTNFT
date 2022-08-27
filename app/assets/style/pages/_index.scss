@@ -286,11 +286,26 @@
   
   }
   .swiper-slide-prev{
-    width: 306px;
     height: 263px;
+    margin-right: 100px;
+    background-color: $dark;
+    img{
+      mix-blend-mode:luminosity;
+    }
+  }
+  .swiper-slide-next{
+    height: 263px;
+    margin-left: 100px;
+    background-color: $dark;
+    img{
+      mix-blend-mode:luminosity;
+    }
   }
   .swiper-slide-active{
     transform: scale(1.47);
+  }
+  .swiper-slide-duplicate-next{
+    margin-right: -100px;
   }
   .swiper-button{ 
     position: absolute;
