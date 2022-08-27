@@ -152,7 +152,7 @@
           
         }
         &::after{
-          border-right: 16px solid $black;
+          border-right: 16px solid $primary;
           border-top: 16px solid transparent;
           }
         
@@ -259,6 +259,7 @@
       &::after{
       border-right: 16px solid $dark;
       border-top: 16px solid transparent;
+      z-index: 4;
       }
     }
 }
@@ -267,50 +268,86 @@
 .swiper {
   width: 100%;
   height: 439px;
+  position: initial;
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-wrapper{
+    align-items: center;
+  }
+  .swiper-slide{
+    transform: scale(0.74);
+    transition: transform 0.3s ease-in;
+    
+  
+  }
+  .swiper-slide-prev{
+    width: 306px;
+    height: 263px;
+  }
+  .swiper-slide-active{
+    transform: scale(1.47);
+  }
+  .swiper-button{ 
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  // 頁籤客製化
+  .swiper-pagination{
+    position: initial;
+    width: auto;
+    display: flex;
+  }
+  .swiper-pagination-bullet{
+    background: $dark;
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    opacity:1;
+  }
+  .swiper-pagination-bullet-active{
+    background:$primary;
+    border-radius: 0;
+    width: 16px;
+    height: 8px;
+  }
   
 }
 
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-wrapper{
-  align-items: center;
-}
-.swiper-slide{
-  transform: scale(0.74);
-
-}
-.swiper-slide-active{
-  transform: scale(1);
-}
-
-.swiper-backface-hidden .swiper-slide{
-
-  transform: translateZ(0);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-}
-.swiper-android .swiper-slide, .swiper-wrapper{
-  transform: translate3d(0px,0,0);
-}
 
 
-// 頁籤客製化
-.swiper-pagination-bullet{
-  background: $dark;
-  width: 8px;
-  height: 8px;
-  border-radius: 0;
-}
-.swiper-pagination-bullet-active{
-  background:$primary;
-  border-radius: 0;
-  width: 16px;
-  height: 8px;
+
+
+
+
+
+.join__list{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color:$dark;
+    top:9px;
+    left: 0;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color:$dark;
+    bottom: 9px;
+    left: 0;
+  }
 }
 
 

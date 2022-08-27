@@ -27,7 +27,9 @@ input:focus{
 }
 
 .btn-more{
-    border: 1px solid $dark;
+    border-top:1px solid transparent;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
     padding: 8px 48px;
     position: relative;
     transition: all .3s;
@@ -45,6 +47,7 @@ input:focus{
     &:hover{
         background-color: $primary;
         color: $white;
+        border-color: $dark;
         &::after{
         border-right: 16px solid $dark;
         border-top: 16px solid transparent;
@@ -52,3 +55,15 @@ input:focus{
     }
 }
 
+.btn{
+    border-radius: 0;
+}
+.btn-outline-dark:hover{
+    background: $primary;
+}
+
+.border-hover-dark{
+    &:hover{
+        border-color: $dark;
+    }
+}
