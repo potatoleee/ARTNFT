@@ -15,7 +15,7 @@ $(function () {
 var swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 0,
   centeredSlides: true,
   // If we need pagination
@@ -31,6 +31,14 @@ var swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar'
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    }
   }
 });
 //# sourceMappingURL=all.js.map
