@@ -16,11 +16,12 @@ var swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 24,
+  spaceBetween: 0,
   centeredSlides: true,
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true
   },
   // Navigation arrows
   navigation: {
