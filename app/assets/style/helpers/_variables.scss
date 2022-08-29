@@ -283,6 +283,11 @@ $position-values: (
   16: 16px,
   24: 24px,
   32: 32px,
+  72: 72px,
+  80: 80px,
+  88: 88px,
+  94: 94px,
+
 ) !default;
 // scss-docs-end position-map
 
@@ -462,6 +467,8 @@ $h4-font-size:                $font-size-base * 1.25 !default;//20
 $h5-font-size:                $font-size-base * 1.125 !default;//18
 $h6-font-size:                $font-size-base !default;//16
 $h7-font-size:                $font-size-base * 0.875 !default;//14
+$h8-font-size:                $font-size-base * 0.75 !default;//12
+$xxl-font-size:               $font-size-base * 5 !default;//80
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -473,6 +480,8 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size,
+  8: $h8-font-size,
+  xxl: $xxl-font-size,
 ) !default;
 // scss-docs-end font-sizes
 

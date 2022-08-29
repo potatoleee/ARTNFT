@@ -269,6 +269,9 @@
   width: 100%;
   height: 439px;
   position: initial;
+  @include pad{
+    height: auto
+  }
   
   .swiper-slide img {
     display: block;
@@ -289,6 +292,9 @@
     height: 263px;
     margin-right: 100px;
     background-color: $dark;
+    @include pad{
+      margin-right: 0px;
+    }
     img{
       mix-blend-mode:luminosity;
     }
@@ -297,15 +303,24 @@
     height: 263px;
     margin-left: 100px;
     background-color: $dark;
+    @include pad{
+      margin-left: 0;
+    }
     img{
       mix-blend-mode:luminosity;
     }
   }
   .swiper-slide-active{
     transform: scale(1.47);
+    @include pad{
+      transform: scale(1);
+    }
   }
   .swiper-slide-duplicate-next{
     margin-right: -100px;
+    @include pad{
+      margin-right: 0px;
+    }
   }
   .swiper-button{ 
     position: absolute;
@@ -332,6 +347,30 @@
     width: 16px;
     height: 8px;
   }
+  .swiper-slide-name{
+    top:72px;
+    left: 24px;
+    @include pad{
+
+    }
+  }
+  .swiper-slide-content{
+    position: absolute;
+    bottom: 94px;
+    left: 24px;
+    width: 48%;
+
+    @include pad{
+      position: initial;
+      bottom: 24px;
+      width: 100%;
+    }
+  }
+  .swiper-slide-button{
+    bottom: 94px;
+    right: 24px;
+  }
+  
   
 }
 
@@ -381,46 +420,7 @@
       display: block;
     }
   }
-  // &.overlay-more{
 
-  //   position: relative;
-  //   &::before{
-     
-  //     content: "more";
-  //     position: absolute;
-  //     padding: 8px 48px;
-  //     color: $dark;
-  //     right:  32px;
-  //     bottom: 32px;
-  //     background: $white;
-  //     font-size: 18px;
-  //     line-height: 19px;
-  //     border: 1px solid $dark;
-  //     font-family: 'Squada One', cursive;
-  //   }
-  //   &::after{
-     
-  //     content: "";
-  //     position: absolute;
-  //     bottom: 32px;
-  //     right: 32px;
-  //     width: 0;
-  //     height: 0;
-  //     border-right: 16px solid $primary;
-  //     border-top: 16px solid transparent;
-  // }
-  // &:hover{
-  //     &::before{
-  //       opacity: 1;
-  //       background: $dark;
-  //     }
-  //     &::after{
-  //       opacity: 1;
-  //     border-right: 16px solid $black;
-  //     border-top: 16px solid transparent;
-  //     }
-  // }
-  // }
  
 
 }

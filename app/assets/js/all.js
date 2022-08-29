@@ -20,8 +20,8 @@ $(function() {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  loop: true,
-  slidesPerView: 1,
+    loop: true,
+    slidesPerView: 1,
     spaceBetween: 0,
 	  centeredSlides: true,
 
