@@ -11,6 +11,9 @@ $(function () {
     $('#nav__buger').removeClass('open');
     $('.nav__content__mobile__menu').removeClass('open');
   });
+  $('.row').imagesLoaded().progress(function () {
+    $('.row').masonry(); // 渲染整體畫面
+  });
 });
 var swiper = new Swiper('.swiper', {
   // Optional parameters
