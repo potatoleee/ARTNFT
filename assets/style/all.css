@@ -1,4 +1,34 @@
 @charset "UTF-8";
+input:focus {
+  outline: none;
+}
+
+.triangle {
+  position: relative;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid transparent;
+}
+
+.triangle:hover::after {
+  border-right: 16px solid #000;
+  border-top: 16px solid transparent;
+}
+
+.writing-vertical {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9822,6 +9852,70 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.opacity-25 {
+  opacity: 0.25 !important;
+}
+
+.opacity-30 {
+  opacity: 0.3 !important;
+}
+
+.opacity-50 {
+  opacity: 0.5 !important;
+}
+
+.opacity-70 {
+  opacity: 0.7 !important;
+}
+
+.opacity-85 {
+  opacity: 0.85 !important;
+}
+
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+.bg-repeat {
+  background-repeat: repeat !important;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat !important;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x !important;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y !important;
+}
+
+.bg-round {
+  background-repeat: round !important;
+}
+
+.bg-space {
+  background-repeat: space !important;
+}
+
+.bg-auto {
+  background-size: auto !important;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+.bg-contain {
+  background-size: contain !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -15721,34 +15815,21 @@ sub {
   }
 }
 
-input:focus {
-  outline: none;
+.nav-tabs {
+  border-bottom: 1px solid #000;
 }
 
-.triangle {
-  position: relative;
+.nav-tabs .nav-link {
+  color: #808080;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
-.triangle::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-right: 16px solid #E6553B;
-  border-top: 16px solid transparent;
-}
-
-.triangle:hover::after {
-  border-right: 16px solid #000;
-  border-top: 16px solid transparent;
-}
-
-.writing-vertical {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+.nav-tabs .nav-link.active {
+  color: #000;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
 .btn-more {
@@ -15801,31 +15882,6 @@ input:focus {
 
 .border-hover-dark:hover {
   border-color: #000;
-}
-
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-hover-1:hover {
-  opacity: 1;
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #000;
-}
-
-.nav-tabs .nav-link {
-  color: #808080;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.nav-tabs .nav-link.active {
-  color: #000;
-  border-top: 1px solid #000;
-  border-right: 1px solid #000;
-  border-left: 1px solid #000;
 }
 
 main {
