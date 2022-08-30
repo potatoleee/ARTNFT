@@ -1,0 +1,44 @@
+.btn-more{
+    border-top:1px solid transparent;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    padding: 8px 48px;
+    position: relative;
+    transition: all .3s;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-right: 16px solid $primary;
+        border-top: 16px solid transparent;
+        transition: all .3s;
+    }
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        border-color: $dark;
+        &::after{
+        border-right: 16px solid $dark;
+        border-top: 16px solid transparent;
+        }
+    }
+}
+
+.btn{
+    border-radius: 0;
+}
+.btn-outline-dark{
+    background: $white;
+}
+.btn-outline-dark:hover{
+    background: $primary;
+}
+
+.border-hover-dark{
+    &:hover{
+        border-color: $dark;
+    }
+}

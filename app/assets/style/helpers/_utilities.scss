@@ -27,77 +27,40 @@ input:focus{
     writing-mode: vertical-lr;
 }
 
-.btn-more{
-    border-top:1px solid transparent;
-    border-left:1px solid transparent;
-    border-right:1px solid transparent;
-    padding: 8px 48px;
-    position: relative;
-    transition: all .3s;
-    &::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 0;
-        border-right: 16px solid $primary;
-        border-top: 16px solid transparent;
-        transition: all .3s;
-    }
-    &:hover{
-        background-color: $primary;
-        color: $white;
-        border-color: $dark;
-        &::after{
-        border-right: 16px solid $dark;
-        border-top: 16px solid transparent;
-        }
-    }
-}
 
-.btn{
-    border-radius: 0;
-}
-.btn-outline-dark{
-    background: $white;
-}
-.btn-outline-dark:hover{
-    background: $primary;
-}
 
-.border-hover-dark{
-    &:hover{
-        border-color: $dark;
-    }
-}
 
-.opacity-0{
-    opacity: 0;
-}
-.opacity-hover-1{
-    &:hover{
-        opacity: 1;
-    }
-}
-// $utilities: map-merge(
-//     $utilities,(
+
+
+$utilities: map-merge(
+    $utilities,(
      
-//       "opacity": (
-//         property: opacity,
-//         values: (
-//           0: 0,
-//           25: .25,
-//           30: .3,
-//           50: .5,
-//           70: .7,
-//           85: 0.85,
-//           100: 1,
-//         )
-//       ),
+      "opacity": (
+        property: opacity,
+        // class: opac,
+        values: (
+          0: 0,
+          25: .25,
+          30: .3,
+          50: .5,
+          70: .7,
+          85: 0.85,
+          100: 1,
+        )
+      ),
+      "background-repeat": (
+        property: background-repeat,
+        class: bg,
+        values: (repeat, no-repeat, repeat-x, repeat-y, round, space)
+      ),
+      "background-size": (
+        property: background-size,
+        class: bg,
+        values: (auto, cover, contain)
+      ),
     
-//     )
-//   );
+    )
+  );
 // $utilities: map-merge(
 //     $utilities,(
 //       "position": map-merge(
