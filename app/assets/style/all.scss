@@ -8,14 +8,17 @@
 
 @import "./helpers/mixin";
 
-@import './base/base.scss';
+@import "./base/base";
+@import './base/typography';
 
 @import "./helpers/myUtilities";
 
-@import './base/typography';
+@import "./components/nav";
+
 
 
 
 @import "./layout/layout.scss";
 
 @import "./pages/index.scss";
+@import "./pages/artist.scss";

@@ -1,0 +1,260 @@
+---
+title: 藝術家介紹頁- ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container my-7 pb-md-12">
+    <div class="row flex-column flex-lg-row">
+        <!-- 藝術家資訊 start-->
+        <div class="col col-lg-9 mb-4 mb-lg-0">
+            <div class="card rounded-0">
+                <div class="row g-0">
+                  <div class="col-md-5 artist__avator">
+                    
+                  </div>
+                  <div class="col-md-7 border border-dark py-5 px-4 p-md-5 pb-md-6">
+                    <div >
+
+                      <div class="d-flex justify-content-between align-items-center mb-8 mb-md-4">
+                            <h3 class="font-squadaOne fs-2 fs-lg-1  ">Michael</h3>
+                            <div class="d-flex gap-2">
+                                <i class="fa-brands fa-discord"></i>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-solid fa-globe"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                             </div>
+                      </div>
+                      <p class="font-squadaOne mb-5">0x3ya666…88ef</p>
+                      <p class="card-text pb-2">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+         <!-- 藝術家資訊 end-->
+        <!-- 販售價格資訊 start-->
+        <div class="col col-lg-3">
+           <ul class="list-group rounded-0">
+            <li class="d-flex justify-content-between py-4 px-5 list-group-item align-items-center  border-dark ">
+                <p class="fw-bold">販售中</p>
+                <p class="font-squadaOne fs-2 ">168</p>
+            </li>
+            <li class="d-flex justify-content-between py-4 px-5 list-group-item align-items-center  border-dark ">
+                <p class="fw-bold">地板價格</p>
+                <p class="font-squadaOne fs-2 ">0.6 <sub class="fs-3">ETH</sub></p>
+            </li>
+            <li class="d-flex justify-content-between py-4 px-5 list-group-item align-items-center  border-dark ">
+                <p class="fw-bold">7 日成交</p>
+                <p class="font-squadaOne fs-2 ">8.8 <sub class="fs-3">ETH</sub></p>
+            </li>
+            <li class="d-flex justify-content-between py-4 px-5 list-group-item align-items-center border-dark "  >
+                <p class="fw-bold">30 日成交</p>
+                <p class="font-squadaOne fs-2 ">23.1 <sub class="fs-3">ETH</sub></p>
+            </li>
+           </ul>
+           
+        </div>
+          <!-- 販售價格資訊 end-->
+    </div>
+</div>
+<div class="container">
+    <!-- nav區 -->
+    <ul class="nav nav-tabs mb-5 mb-md-7" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+        <button class="nav-link active font-squadaOne fs-2 fs-md-1 p-4 px-md-8" id="artWoks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">Art Works<sub class="d-none d-md-inline-block fs-4 ms-md-4">系列作品</sub> </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+        <button class="nav-link font-squadaOne fs-2 fs-md-1 p-4 px-md-8" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="profile" aria-selected="false">Collection <sub class="d-none d-md-inline-block fs-4 ms-md-4">收藏品</sub></button>
+        </li>
+       
+    </ul>
+    <!-- nav區 -->
+    
+    <div class="tab-content" id="myTabContent">
+        <!-- 系列作品內容 -->
+        <div class="tab-pane fade show active bg-white border" id="artWorks" role="tabpanel" aria-labelledby="artWoks-tab">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="  ">
+                        <h3 class="fw-bold fs-5">追求者送我的花</h3>
+                        <div class="d-flex align-items-end">
+                            <p>我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                            <a class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 "href="#">more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+          <!-- 系列作品內容 -->
+            <!-- 收藏品內容 -->
+        <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+            <ul class="row gy-4 gy-lg-8" data-masonry='{"percentPosition": true }'>
+                <!-- 最新藝術品1 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art09.jpg" alt="">
+                        <div class="overlay__text">
+                            <p class="mb-4">唯一想擁有的人，唯一不可擁有的</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">區塊戀-他的私生活
+                    </p>
+                </li>
+                  <!-- 最新藝術品1 -->
+                  <!-- 最新藝術品2 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art10.jpg" alt="夏娃的醜聞">
+                        <div class="overlay__text">
+                            <p class="mb-4">夏娃的醜聞</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">夏娃的醜聞
+                    </p>
+                </li>
+                  <!-- 最新藝術品2 -->
+                    <!-- 最新藝術品3 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art02.jpg" alt="藍色啤酒海">
+                        <div class="overlay__text">
+                            <p class="mb-4">唯一想擁有的人，唯一不可擁有的</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">藍色啤酒海
+                    </p>
+                </li>
+                  <!-- 最新藝術品3 -->
+                    <!-- 最新藝術品4 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art11.jpg" alt="沒有人愛我">
+                        <div class="overlay__text">
+                            <p class="mb-4">沒有人愛我</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">沒有人愛我
+                    </p>
+                </li>
+                  <!-- 最新藝術品4 -->
+                    <!-- 最新藝術品5 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠">
+                        <div class="overlay__text">
+                            <p class="mb-4">不哭不哭眼淚是珍珠</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">不哭不哭眼淚是珍珠
+                    </p>
+                </li>
+                  <!-- 最新藝術品5 -->
+                    <!-- 最新藝術品6 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art03.jpg" alt="十分鐘就到">
+                        <div class="overlay__text">
+                            <p class="mb-4">十分鐘就到</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">十分鐘就到
+                    </p>
+                </li>
+                  <!-- 最新藝術品6 -->
+                    <!-- 最新藝術品7 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art04.jpg" alt="我這樣有美嗎">
+                        <div class="overlay__text">
+                            <p class="mb-4">我這樣有美嗎？</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">我這樣有美嗎
+                    </p>
+                </li>
+                  <!-- 最新藝術品7 -->
+                    <!-- 最新藝術品8 -->
+                <li class="col-6 col-lg-3">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art27.jpg" alt="我真的受傷了">
+                        <div class="overlay__text">
+                            <p class="mb-4">唯一想擁有的人，唯一不可擁有的</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">我真的受傷了
+                    </p>
+                </li>
+                  <!-- 最新藝術品8 -->
+                
+                
+    
+               
+            </ul>
+
+        </div>
+            <!-- 收藏品內容 -->
+  
+    </div>
+</div>

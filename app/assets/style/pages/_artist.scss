@@ -1,0 +1,10 @@
+.artist__avator{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/artist01.jpg");
+    object-fit: cover;
+    @include phone{
+        height: 213px;
+    }
+}
