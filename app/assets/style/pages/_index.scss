@@ -351,7 +351,13 @@
     top:72px;
     left: 24px;
     @include pad{
-
+        top: 24px;
+    }
+    &-sm{
+      font-size: 32px;
+    }
+    &-lg{
+      font-size: 64px;
     }
   }
   .swiper-slide-content{
@@ -369,6 +375,9 @@
   .swiper-slide-button{
     bottom: 94px;
     right: 24px;
+    @include pad{
+      bottom: 124px;
+    }
   }
   
   
