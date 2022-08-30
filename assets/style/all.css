@@ -15680,6 +15680,47 @@ ul {
   padding-left: 0;
 }
 
+sub {
+  bottom: 0;
+}
+
+.font-squadaOne {
+  font-family: 'Squada One', cursive;
+  line-height: calc( 100% + 2px);
+}
+
+.font-paytoneOne {
+  font-family: 'Paytone One', sans-serif;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.fs-subTitle {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+@media (max-width: 767px) {
+  .fs-subTitle {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.fs-title {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+@media (max-width: 767px) {
+  .fs-title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
 input:focus {
   outline: none;
 }
@@ -15770,40 +15811,21 @@ input:focus {
   opacity: 1;
 }
 
-.font-squadaOne {
-  font-family: 'Squada One', cursive;
+.nav-tabs {
+  border-bottom: 1px solid #000;
 }
 
-.font-paytoneOne {
-  font-family: 'Paytone One', sans-serif;
+.nav-tabs .nav-link {
+  color: #808080;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
-.fz-40 {
-  font-size: 40px;
-}
-
-.fs-subTitle {
-  font-size: 48px;
-  line-height: 70px;
-}
-
-@media (max-width: 767px) {
-  .fs-subTitle {
-    font-size: 24px;
-    line-height: 35px;
-  }
-}
-
-.fs-title {
-  font-size: 48px;
-  line-height: 50px;
-}
-
-@media (max-width: 767px) {
-  .fs-title {
-    font-size: 32px;
-    line-height: 34px;
-  }
+.nav-tabs .nav-link.active {
+  color: #000;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
 main {
@@ -16449,6 +16471,21 @@ main {
   background-color: #000;
   bottom: 9px;
   left: 0;
+}
+
+.artist__avator {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/artist01.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .artist__avator {
+    height: 213px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
