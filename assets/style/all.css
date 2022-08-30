@@ -16314,6 +16314,20 @@ main {
   left: 24px;
 }
 
+@media (max-width: 991px) {
+  .swiper .swiper-slide-name {
+    top: 24px;
+  }
+}
+
+.swiper .swiper-slide-name-sm {
+  font-size: 32px;
+}
+
+.swiper .swiper-slide-name-lg {
+  font-size: 64px;
+}
+
 .swiper .swiper-slide-content {
   position: absolute;
   bottom: 94px;
@@ -16332,6 +16346,12 @@ main {
 .swiper .swiper-slide-button {
   bottom: 94px;
   right: 24px;
+}
+
+@media (max-width: 991px) {
+  .swiper .swiper-slide-button {
+    bottom: 124px;
+  }
 }
 
 .overlay {
