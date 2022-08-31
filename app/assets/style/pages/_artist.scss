@@ -19,12 +19,13 @@
         bottom: 0;
         left: -1px;
         background: $light;
-        border-top: 1px solid $light;
+        border-top: 1px solid $dark;
         border-left: 1px solid $light;
         border-right: 1px solid $light;
         @include pad{
             background: $white;
             border-left: 1px solid $dark;
+            border-top: 1px solid $light;
             border-right: 1px solid $dark;
             border-bottom: 1px solid $dark;
         }

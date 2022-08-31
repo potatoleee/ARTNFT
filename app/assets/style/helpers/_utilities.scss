@@ -149,6 +149,22 @@ $utilities: map-merge(
                 class: overflow-y
               )
             ),
+      "width": (
+          property: width,
+          class: w,
+          values: (
+            16:16px,
+            
+          )
+       ),
+
+     "height": (
+        property: height,
+        class: h,
+        values: (
+          16:16px,
+        )
+    ),
    
     
     )
