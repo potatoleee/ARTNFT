@@ -15482,6 +15482,10 @@ sub {
   font-family: 'Paytone One', sans-serif;
 }
 
+.font-notoSans {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
 .fz-40 {
   font-size: 40px;
 }
