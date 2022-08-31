@@ -1,9 +1,34 @@
+.form-check{
+ 
+    min-height: 0; 
+    padding-left: 0; 
+    margin-bottom: 0;
+         
+}
+.form-check-input{
+    border:1px solid $dark;
+}
 .form-check-input[type="checkbox"]{
     border-radius: 0;
+    &:checked{
+        background-color: $dark;
+        border-color: $dark;
+    }
 }
-input[type=checkbox]{
-    border-radius: 0;
-}
+
 .form-checkbox[type="checkbox"]{
     border-radius: 0;
+}
+
+.form-select{
+    width: 90%;
+    padding: 8px;
+    border-color: $dark;
+    border-radius: 0;
+}
+.input-text-price{
+    width: 100%;
+    border: 1px solid $dark;
+    border-radius: 0;
+    padding: 7px 2px;
 }
