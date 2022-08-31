@@ -63,20 +63,191 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-3">
-            <form class="p-5 border">
-
-                <p class="fw-bold">網路</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <label for="filter-eth">以太坊</label>
-                    <input class="w-16 h-16  form-checkbox" type="checkbox" name="filter-eth" id="filter-eth">
-                 </div> 
-                 <!-- <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
-                    </label>
-                  </div> -->
-                
+            <form class=" border">
+                <!-- 網路 start -->
+                <div class="border-bottom border-secondary p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="fw-bold">網路</p>
+                        <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseWifi"></i>
+                    </div>
+                    <div id="collapseWifi">
+                    <div class="form-check d-flex justify-content-between mb-2">
+                            <label class="form-check-label" for="filter-eth">
+                                以太坊
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="filter-eth">
+                        </div>
+                        
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label" for="filter-bnb">
+                                BNB 智能鏈
+                            </label>
+                        <input class="form-check-input" type="checkbox" value="" id="filter-bnb">
+                        </div>
+                    </div>
+                </div>
+                <!-- 網路 end -->
+                <!-- 狀態 start-->
+                <div class="border-bottom border-secondary p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="fw-bold">狀態</p>
+                        <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseState"></i>
+                    </div>
+                    <div id="collapseState">
+                    <div class="form-check d-flex justify-content-between mb-2">
+                            <label class="form-check-label" for="filter-exhibit">
+                                僅展示
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="filter-exhibit">
+                        </div>
+                        
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label" for="filter-auction">
+                                拍賣中
+                            </label>
+                        <input class="form-check-input" type="checkbox" value="" id="filter-auction">
+                        </div>
+                    </div>
+                </div>
+                 <!-- 狀態 end-->
+                 <!-- 價格 start -->
+                 <div class="p-5 border-bottom border-secondary">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="fw-bold">價格</p>
+                        <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapsePrice"></i>
+                    </div>
+                    <div class="d-flex justify-content-between"id="collapsePrice">
+                        
+                        <select class="form-select me-4" aria-label="Default select example">
+                            <option selected>ETH</option>
+                            <option value="1">BTC</option>
+                        </select>
+                        <div class="d-flex align-items-center">
+                            <input class="input-text-price"type="text" id="priceRange-low">
+                            <span class="mx-2">－</span>
+                            <input class="input-text-price"type="text" id="priceRange-high">
+                        </div>
+                    </div>
+                 </div>
+                 <!-- 價格 end -->
+                 <!-- 屬性 start  -->
+                 <div class="border-bottom border-secondary p-5">
+                    <p class="mb-5 text-secondary">屬性</p>
+                    <!-- 品種start -->
+                    <div class="mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <p class="fw-bold">品種</p>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseVariety"></i>
+                        </div>
+                        <div id="collapseVariety">
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-
+                                starling">
+                                    八哥
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-starling">
+                            </div>
+                            
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-budgerigar">
+                                    虎皮鸚鵡
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-budgerigar">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-Peacebird">
+                                    太平鳥
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-Peacebird">
+                            </div>
+                            
+                            <div class="form-check d-flex justify-content-between">
+                                <label class="form-check-label" for="filter-Thrush">
+                                    畫眉鳥
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-Thrush">
+                            </div>
+                        </div>
+                    </div>
+                     <!-- 品種end -->
+                     <!-- 鳥的數量 start  -->
+                     <div class="mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <p class="fw-bold">鳥的數量</p>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseAmount"
+                            aria-expanded="false" aria-controls="collapseAmount"></i>
+                        </div>
+                        <div id="collapseAmount">
+                            
+                            <div>
+                                <input class="border-dark rounded-0 w-100 border-1 p-2"type="text" id="filter-amount" value="1">
+                            </div>
+                        </div>
+                    </div>
+                     <!-- 鳥的數量 end  -->
+                      <!-- 是否有花草 start  -->
+                      <div class="mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <p class="fw-bold">是否有花草</p>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseFlowereGrass" aria-expanded="false" aria-controls="collapseFlowereGrass"></i>
+                        </div>
+                        <div id="collapseFlowereGrass">
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-
+                                flower">
+                                    花
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-flower">
+                            </div>
+                            
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-Grass">
+                                    草
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-Grass">
+                            </div>
+                           
+                        </div>
+                    </div>
+                     <!-- 是否有花草 end  -->
+                      <!-- 鳥的顏色 start  -->
+                      <div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <p class="fw-bold">鳥的顏色</p>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseColor"></i>
+                        </div>
+                        <div id="collapseColor">
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-black">
+                                    黑
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-black">
+                            </div>
+                            
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-blue">
+                                    藍
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-blue">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2">
+                                <label class="form-check-label" for="filter-green">
+                                    綠
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-green">
+                            </div>
+                            
+                            <div class="form-check d-flex justify-content-between">
+                                <label class="form-check-label" for="filter-white">
+                                    白
+                                </label>
+                                <input class="form-check-input" type="checkbox"  id="filter-white">
+                            </div>
+                        </div>
+                    </div>
+                     <!-- 鳥的顏色 end  -->
+                </div>
+                 <!-- 屬性 end -->
             </form>
         </div>
         <div class="col-lg-9"></div>
