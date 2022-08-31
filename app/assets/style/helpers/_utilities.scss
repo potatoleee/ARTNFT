@@ -22,9 +22,39 @@ input:focus{
         }
     }
 }
+.triangle-dark{
+  position: relative;
+  &::after,&::before{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-right: 16px solid $dark;
+      border-top: 16px solid transparent;
+     
+  }
+  &::after{
+    top:0;
+   right: 0;
+   transform: rotate(-90deg);
+   
+  }
+  &::before{
+     top: 0;
+     left: 0;
+     transform: rotate(-180deg);
+  }
+}
 
 .writing-vertical{
     writing-mode: vertical-lr;
+}
+.wrap-square{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
 }
 
 
@@ -85,6 +115,40 @@ $utilities: map-merge(
       class: border,
       values: map-merge($theme-colors, ("white": $white))
     ),
+    "rotate": (
+      responsive: true,
+      property: transform,
+      class: rotate,
+      values: (
+       45:rotate(45deg),
+       90:rotate(90deg),
+      )
+    ),
+    "overflow": map-merge(
+              map-get($utilities,"overflow"),(
+                responsive: true,
+                property: overflow,
+                state: hover,
+                class: overflow,
+                values: ( auto, hidden, visible, scroll)
+              )
+            ),
+            "overflow-x": map-merge(
+              map-get($utilities,"overflow"),(
+                responsive: true,
+                state: hover,
+                property: overflow-x,
+                class: overflow-x
+              )
+            ),
+            "overflow-y": map-merge(
+              map-get($utilities,"overflow"),(
+                responsive: true,
+                state: hover,
+                property: overflow-y,
+                class: overflow-y
+              )
+            ),
    
     
     )
