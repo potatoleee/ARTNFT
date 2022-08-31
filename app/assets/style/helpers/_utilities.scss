@@ -58,6 +58,33 @@ $utilities: map-merge(
         class: bg,
         values: (auto, cover, contain)
       ),
+
+    
+    "font-size": map-merge(
+      map-get($utilities,"font-size"),
+      (
+        responsive: true,
+        
+      )
+    ),
+    "font-weight": (
+      responsive: true,
+      property: font-weight,
+      class: fw,
+      values: (
+        light: $font-weight-light,
+        lighter: $font-weight-lighter,
+        normal: $font-weight-normal,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder
+      )
+    ),
+    "border-color": (
+      responsive: true,
+      property: border-color,
+      class: border,
+      values: map-merge($theme-colors, ("white": $white))
+    ),
     
     )
   );
