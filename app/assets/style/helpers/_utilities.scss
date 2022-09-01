@@ -1,4 +1,9 @@
 
+.rotate-180{
+  transform: rotate(180deg);
+  transition: all .3s;
+}
+
 input:focus{
     outline: none;
 }
@@ -149,26 +154,29 @@ $utilities: map-merge(
                 class: overflow-y
               )
             ),
-      "width": (
-          property: width,
-          class: w,
-          values: (
-            16:16px,
-          25: 25%,
-          50: 50%,
-          75: 75%,
-          100: 100%,
-          auto: auto
+      // "width": (
+      //     property: width,
+      //     class: w,
+      //     values: (
+      //     16:16px,
+      //     32:32px,
+      //     25: 25%,
+      //     50: 50%,
+      //     75: 75%,
+      //     100: 100%,
+      //     auto: auto
             
             
-          )
-       ),
+      //     )
+      //  ),
 
      "height": (
         property: height,
         class: h,
         values: (
-          16:16px,
+          4n: 16px,
+          5n: 20px,
+          8n: 32px,
           25: 25%,
           50: 50%,
           75: 75%,
@@ -176,8 +184,41 @@ $utilities: map-merge(
           auto: auto
         )
     ),
+    "object-fit":(
+      property: object-fit,
+      class: object,
+      values: cover,
+    ),
+    "width": map-merge(
+             map-get($utilities,"width"),
+             (
+                responsive: true,
+                values: map-merge(
+                map-get(map-get($utilities, "width"), "values"),
+                ( 
+                  1 :1px,
+                  8n: 32px,
+                  17n: 68px,
+                  22n: 88px,
+                  30: 30%,
+                  35: 35%,
+                  40: 40%,
+                  45: 45%,
+                  55: 55%,
+                  60: 60%,
+                  65: 65%,
+                  70: 70%,
+                  80: 80%,
+                  85: 85%,
+                  90: 90%,
+                  95: 95%,
+                  100: 100%,
+                  auto: auto
+                ),
+              )
+              )
+            ),
    
-    
     )
   );
 // $utilities: map-merge(

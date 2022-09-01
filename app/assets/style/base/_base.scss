@@ -27,13 +27,16 @@ img{
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6,ul,ol,p{
+h1, h2, h3, h4, h5, h6,p{
     margin: 0;
+    line-height: 1.5;
 }
+
 
 ol, ul {
 	list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 sub{

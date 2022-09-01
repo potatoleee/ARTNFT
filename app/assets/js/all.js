@@ -12,9 +12,21 @@ $(function() {
       $('.nav__content__mobile__menu').removeClass('open');
     })
 
-    $('.row').imagesLoaded().progress( function() {
-      $('.row').masonry(); // 渲染整體畫面
+    $('.masonryRow').imagesLoaded().progress( function() {
+      $('.masonryRow').masonry(); // 渲染整體畫面
     });
+
+    $('.masonryTab').on('shown.bs.tab', function () {
+      let msnry = Masonry.data($('.masonryRow')[0]);
+      $('.masonryRow').imagesLoaded(function () {
+        msnry.layout(); // 渲染整體畫面
+      });
+    });
+    //篩選欄位 擴增icon start
+    $('.fa-angle-up').on('click',function(){
+      $(this).toggleClass('rotate-180');
+      
+    });//篩選欄位 擴增icon end
   
 });
 
