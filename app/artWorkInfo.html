@@ -1,0 +1,361 @@
+---
+title: 藝術品系列-篩選 - ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container mb-7 mt-5 my-md-7">
+    <div class="row  mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class=" wrap-square pb-85p">
+                 <img class="square-img  "src="./assets/images/art21.jpg" alt="">
+             </div>
+        </div>
+        <div class="col-lg-6 ">
+            <div class="minh-100 bg-white border">
+                <div class="bg-white border-bottom ">
+                    <div class="pt-4 pb-5 pb-6 px-4 px-md-7 ">
+                        <div class="d-flex justify-content-between align-items-lg-center mb-4 flex-column-reverse flex-md-row">
+                            <h2 class="fs-2 fs-md-1 fw-bold">兩情相悅</h2>
+                            <div class="d-flex align-items-center gap-4 mb-2 mb-lg-0">
+                                <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/artist01.jpg" alt="">
+                                <p class="font-squadaOne ">Michael</p>
+                            </div>
+                        </div>
+                        <p class="fs-7 mb-2 text-secondary">最高出價</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-2 align-items-center">
+                                <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/user01.jpg" alt="">   
+                                <i class="fa-solid fa-arrow-right"></i> 
+                                <p class="font-squadaOne">0.044Eth</p>
+                            </div>
+
+                            <button type="button" class="btn btn-primary border-dark px-8 py-2 fs-5 text-white">出價</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border-top-0 px-4 px-md-7 py-5 py-md-6">
+                    <p class="mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                    <p class="mb-4">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+                    <p>好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="row gy-5 gy-lg-0">
+        <!-- 屬性 start -->
+        <li class="col-lg-6">
+                <div >
+                    <div class="d-flex justify-content-between align-items-center  p-5 border bg-white">
+                        <p class="fw-bold">屬性</p>
+                        <i  role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse"  data-bs-target="#collapseFeature"  aria-expanded="true"  aria-controls="collapseFeature" ></i>
+                    </div>
+                    <div class="collapse show py-5 px-4 p-md-5 border border-top-0 bg-white" id="collapseFeature">
+                        <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-light ">
+                                <p>品種</p>
+                                <p class="text-secondary">青藍金剛鸚鵡</p>
+                        </div>
+                        <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-light ">
+                            <p>鳥的數量</p>
+                            <p class="text-secondary">2隻</p>
+                         </div>
+
+                         <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-light ">
+                            <p>是否有花草</p>
+                            <p class="text-secondary">是</p>
+                         </div>
+
+                         <div class="d-flex justify-content-between  border-light ">
+                            <p>鳥的顏色</p>
+                            <p class="text-secondary">藍色</p>
+                         </div>
+                    
+                       
+                    </div>
+                </div>
+        </li>
+        <!-- 屬性 end -->
+        <!-- 出價 start  -->
+        <li class="col-lg-6">
+            <div class="">
+                <div class="d-flex justify-content-between align-items-center  p-5 border bg-white">
+                    <p class="fw-bold">出價</p>
+                    <i  role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse"  data-bs-target="#collapsebid"  aria-expanded="true"  aria-controls="collapsebid" ></i>
+                </div>
+                <div class="collapse show py-5 px-4 p-md-5 border border-top-0 bg-white" id="collapsebid">
+                    <div class="d-flex mb-2 mb-2">
+                        <p class="bg-light w-50 py-2 px-4 ">價格</p>
+                        <p class="bg-light w-50 py-2 px-4 ">期限</p>
+                    </div>
+                    <div class="d-flex pb-2 border-bottom border-light mb-2">
+                        <div class="d-flex gap-2 align-items-center w-50  px-4">
+                            <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/artist03.jpg" alt="">   
+                            <i class="fa-solid fa-arrow-right"></i> 
+                            <p class="font-squadaOne">0.044Eth</p>
+                        </div>
+                        <p class="text-secondary  px-4 w-50">3個月後</p>
+                    </div>
+
+                    <div class="d-flex pb-2 border-bottom border-light mb-2">
+                        <div class="d-flex gap-2 align-items-center w-50  px-4">
+                            <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/user02.jpg" alt="">   
+                            <i class="fa-solid fa-arrow-right"></i> 
+                            <p class="font-squadaOne">0.054Eth</p>
+                        </div>
+                        <p class="text-secondary  px-4 w-50">1個月後</p>
+                    </div>
+
+                    <div class="d-flex ">
+                        <div class="d-flex gap-2 align-items-center w-50  px-4">
+                            <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/user03.jpg" alt="">   
+                            <i class="fa-solid fa-arrow-right"></i> 
+                            <p class="font-squadaOne">0.044Eth</p>
+                        </div>
+                        <p class="text-secondary  px-4 w-50">2週後</p>
+                    </div>
+
+                    
+
+                   
+                   
+                </div>
+            </div>
+        </li>
+          <!-- 出價 end  -->
+        <!-- 基本資訊  start -->
+        <li class="col-lg-6">
+            <div class=" ">
+                <div class="d-flex justify-content-between align-items-center  p-5 border bg-white">
+                    <p class="fw-bold">基本資訊</p>
+                    <i  role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse"  data-bs-target="#collapseBasicInfo"  aria-expanded="true"  aria-controls="collapseBasicInfo" ></i>
+                </div>
+                <div class="collapse show py-5 px-4 p-md-5 border border-top-0 bg-white" id="collapseBasicInfo">
+                    <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-light ">
+                            <p>擁有者</p>
+                            <p class="text-secondary">0xa543x…1283</p>
+                    </div>
+                    <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-light ">
+                        <p>代幣ID</p>
+                        <p class="text-secondary">2隻</p>
+                     </div>
+
+
+                     <div class="d-flex justify-content-between  border-light ">
+                        <p>#1234</p>
+                        <p class="text-secondary">青藍金剛鸚鵡</p>
+                     </div>
+                
+                   
+                </div>
+            </div>
+        </li>
+          <!--  交易歷史 start -->
+               <!-- 出價 start  -->
+        <li class="col-lg-6 mt-lg-5">
+            <div >
+                <div class="d-flex justify-content-between align-items-center  p-5 border bg-white">
+                    <p class="fw-bold">出價</p>
+                    <i  role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse"  data-bs-target="#collapsetrade"  aria-expanded="true"  aria-controls="collapsetrade" ></i>
+                </div>
+                <div class="collapse show py-5 px-4 p-md-5 border border-top-0 bg-white" id="collapsetrade">
+                    
+                    <table class="table border-light">
+                        <thead>
+                          <tr class="bg-light">
+                            <th scope="col p-2 ">事件</th>
+                            <th scope="col ">價格</th>
+                            <th scope="col ">從</th>
+                            <th scope="col ">時間</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row fw-normal">上架</td>
+                            <td>2nb</td>
+                            <td class="d-flex align-items-center gap-2 font-squadaOne">   <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/artist02.jpg" alt=""> Antony WU</td>
+                            <td>14小時前</td>
+                          </tr>
+                          <tr class="border-white">
+                            <td scope="row fw-normal">出價</td>
+                            <td>2nb</td>
+                            <td class="d-flex align-items-center gap-2 font-squadaOne">   <img class="object-cover rounded-circle w-8n h-8n "src="./assets/images/artist01.jpg" alt=""> Dean Lee</td>
+                            <td>2天前</td>
+                          </tr>
+                        
+                        </tbody>
+                      </table>
+                   
+                </div>
+            </div>
+        </li>
+             <!-- 交易歷史 end  -->
+    </ul>
+
+</div>
+<!-- ohter 其餘作品 start-->
+<div class="container">
+    <div class="d-flex justify-content-between align-items-end border-bottom mb-md-8 mb-5">
+        <div class="d-flex align-items-end gap-4 pb-4">
+            <h2 class="fs-title font-squadaOne">Other </h2>
+            <h2 class="fs-4 d-none d-md-block">其餘作品</h2>
+        </div>
+        <div> 
+            <a class="btn-more font-squadaOne  py-2 px-8 fs-5 lh-1" href="#">more</a>
+        </div>
+    </div>
+    <div>
+        <div class="swiper artSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art20.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">群聚的小鳥們</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art21.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">我真的受傷了</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">我真的受傷了</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art22.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">我真的受傷了</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art23.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">群聚囉～小鳥</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">群聚囉～小鳥</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art24.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art25.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art26.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art27.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+              </div>
+              <div class="swiper-slide">
+                 <div class="bg-white p-2 p-md-5">
+                    <a href="artWorkInfo.html">
+                    <div  class="overlay">
+                        <img src="./assets/images/art22.jpg" alt="這兩隻也太像企鵝了吧">
+                    <div class="overlay__text">
+                        <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                        <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                    </div>
+                    <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                  
+                    </div>
+                     </a>
+                </div>
+                <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+              </div>
+            </div>
+            <div class="swiper-pagination mt-5 mt-md-8 justify-content-center"></div>
+          </div>
+       
+
+    </div>
+</div>
+<!-- other 其餘作品 end -->

@@ -30,7 +30,8 @@ $(function() {
   
 });
 
-const swiper = new Swiper('.swiper', {
+// 首頁輪播start
+var  indexSwiper = new Swiper('.indexSwiper', {
   // Optional parameters
     loop: true,
     slidesPerView: 1,
@@ -63,4 +64,48 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 0,
     }
   }
-});
+});// 首頁輪播end
+
+var  artSwiper = new Swiper('.artSwiper', {
+  // Optional parameters
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 24,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    
+    // Responsive breakpoints
+    breakpoints: {
+      
+      // when window width is >= 640px
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      }
+    },
+  
+});// 首頁輪播end
+
+// 藝術品介紹輪播 start
+// var artSwiper = new Swiper(".artSwiper", {
+//   slidesPerView: 4,
+//   spaceBetween: 30,
+//   breakpoints: {
+//     // when window width is >= 320px
+//     320: {
+//       slidesPerView: 2,
+//       spaceBetween: 20
+//     },
+//   }
+
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+
+// });
+

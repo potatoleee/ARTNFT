@@ -58,12 +58,21 @@ input:focus{
 .writing-vertical{
     writing-mode: vertical-lr;
 }
+// 照片辨正方型外框
 .wrap-square{
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 100%;
     overflow: hidden;
+}
+// 照片辨正方型照片
+.square-img{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
 }
 
 
@@ -162,12 +171,14 @@ $utilities: map-merge(
 
      "height": (
         property: height,
+        responsive: true,
         class: h,
         values: (
           4n: 16px,
           5n: 20px,
           8n: 32px,
           25: 25%,
+          60: 60%,
           50: 50%,
           75: 75%,
           100: 100%,
@@ -207,6 +218,22 @@ $utilities: map-merge(
                 ),
               )
               )
+            ),
+      "padding-bottom": (
+              responsive: true,
+              property: padding-bottom,
+              class: pb,
+              values: $spacers,
+            ),
+
+            "min-height": (
+              responsive: true,
+              property: min-height,
+              class: minh,
+              values:(
+                100:100%,
+                ) 
+                
             ),
    
     )

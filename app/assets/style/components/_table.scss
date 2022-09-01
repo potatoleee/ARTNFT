@@ -1,0 +1,9 @@
+.table > :not(caption) > * > *{
+    padding: 8px 16px;
+}
+.table > :not(:last-child) > :last-child > *{
+    border-bottom-color:$light
+}
+th{
+    font-weight: 400;
+}
