@@ -60,17 +60,18 @@
    
     <main>
     
-<div class="container">
+<div class="container  mt-md-7 mt-5 mb-7 mb-md-12">
     <div class="row">
-        <div class="col-lg-3">
+        <!-- 左側篩選欄位 start -->
+        <div class="col-lg-3 d-none d-lg-block">
             <form class=" border">
                 <!-- 網路 start -->
                 <div class="border-bottom border-secondary p-5">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <p class="fw-bold">網路</p>
-                        <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseWifi"></i>
+                        <i  role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse"  data-bs-target="#collapseWifi"           aria-expanded="true"  aria-controls="collapseWifi" ></i>
                     </div>
-                    <div id="collapseWifi">
+                    <div class="collapse show" id="collapseWifi">
                     <div class="form-check d-flex justify-content-between mb-2">
                             <label class="form-check-label" for="filter-eth">
                                 以太坊
@@ -91,9 +92,9 @@
                 <div class="border-bottom border-secondary p-5">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <p class="fw-bold">狀態</p>
-                        <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseState"></i>
+                        <i role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseState" aria-expanded="true"  aria-controls="collapseState"></i>
                     </div>
-                    <div id="collapseState">
+                    <div class="collapse show" id="collapseState">
                     <div class="form-check d-flex justify-content-between mb-2">
                             <label class="form-check-label" for="filter-exhibit">
                                 僅展示
@@ -114,9 +115,9 @@
                  <div class="p-5 border-bottom border-secondary">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <p class="fw-bold">價格</p>
-                        <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapsePrice"></i>
+                        <i  class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="true"  aria-controls="collapsePrice" role="button" ></i>
                     </div>
-                    <div class="d-flex justify-content-between"id="collapsePrice">
+                    <div class="d-flex justify-content-between collapse show " id="collapsePrice" >
                         
                         <select class="form-select me-4" aria-label="Default select example">
                             <option selected>ETH</option>
@@ -137,9 +138,10 @@
                     <div class="mb-5">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <p class="fw-bold">品種</p>
-                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseVariety"></i>
+                           
+                            <i role="button" class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseVariety" aria-expanded="true"  aria-controls="collapseVariety"></i>
                         </div>
-                        <div id="collapseVariety">
+                        <div  class="collapse show" id="collapseVariety">
                             <div class="form-check d-flex justify-content-between mb-2">
                                 <label class="form-check-label" for="filter-
                                 starling">
@@ -174,10 +176,11 @@
                      <div class="mb-5">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <p class="fw-bold">鳥的數量</p>
-                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseAmount"
-                            aria-expanded="false" aria-controls="collapseAmount"></i>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseAmount "
+                            aria-expanded="false" aria-controls="collapseAmount"
+                            role="button"></i>
                         </div>
-                        <div id="collapseAmount">
+                        <div class="collapse hide "id="collapseAmount">
                             
                             <div>
                                 <input class="border-dark rounded-0 w-100 border-1 p-2"type="text" id="filter-amount" value="1">
@@ -189,9 +192,9 @@
                       <div class="mb-5">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <p class="fw-bold">是否有花草</p>
-                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseFlowereGrass" aria-expanded="false" aria-controls="collapseFlowereGrass"></i>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseFlowerGrass" aria-expanded="false" aria-controls="collapseFlowerGrass"   role="button"></i>
                         </div>
-                        <div id="collapseFlowereGrass">
+                        <div class=" collapse hide" id="collapseFlowerGrass">
                             <div class="form-check d-flex justify-content-between mb-2">
                                 <label class="form-check-label" for="filter-
                                 flower">
@@ -214,9 +217,9 @@
                       <div>
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <p class="fw-bold">鳥的顏色</p>
-                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseColor"></i>
+                            <i class="fa-solid fa-angle-up" data-bs-toggle="collapse" data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor" role="button"></i>
                         </div>
-                        <div id="collapseColor">
+                        <div class=" collapse hide" id="collapseColor">
                             <div class="form-check d-flex justify-content-between mb-2">
                                 <label class="form-check-label" for="filter-black">
                                     黑
@@ -250,7 +253,222 @@
                  <!-- 屬性 end -->
             </form>
         </div>
-        <div class="col-lg-9"></div>
+          <!-- 左側篩選欄位 end -->
+          <!-- 篩選主要內容 start-->
+        <div class="col-lg-9">
+            <div class="d-flex align-items-center gap-4 mb-1">
+                <img class="objict-cover rounded-circle w-8n h-8n "src="./assets/images/artist01.jpg" alt="">
+                <p class="font-squadaOne ">Michael</p>
+            </div>
+            <!-- 描述欄 價格帶 start-->
+            <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-lg-5 gap-4 mb-7">
+                <div class="  w-lg-40 w-xl-45 w-xxl-55 ">
+                    
+                    <h2 class="fw-bold fs-2 mb-2">我家外面的鳥</h2>
+                    <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                </div>
+                <div >
+                    <ul class="d-flex ">
+                        <li class="text-center py-4 px-2  position-relative border border-end-0 bg-white w-25 d-flex flex-column align-items-center">
+                            <div class="bg-dark w-1 h-5n position-absolute end-0 top-0"></div>
+                            <div class="bg-dark w-1 h-5n position-absolute end-0 bottom-0"></div>
+                            <p class="fs-7 fs-md-6 mb-1 mb-md-2 w-md-22n w-17n">項目</p>
+                            <p class="font-squadaOne fs-4 fs-md-3">6.4k</p>
+                        </li>
+                        <li class="text-center py-4 px-2 border border-end-0 border-start-0 position-relative  bg-white w-25 d-flex flex-column align-items-center">
+                            <div class="bg-dark w-1 h-5n position-absolute end-0 top-0"></div>
+                            <div class="bg-dark w-1 h-5n position-absolute end-0 bottom-0"></div>
+                            <p class="fs-7 fs-md-6 mb-1 mb-md-2 w-md-22n w-17n">擁有者</p>
+                            <p class="font-squadaOne fs-4 fs-md-3">2.5k</p>
+                        </li>
+                        <li class="text-center py-4 px-2 border border-end-0 border-start-0 position-relative  bg-white w-25 d-flex flex-column align-items-center">
+                            <div class="bg-dark w-1 h-5n position-absolute end-0 top-0"></div>
+                            <div class="bg-dark w-1 h-5n position-absolute end-0 bottom-0"></div>
+                            <p class="fs-7 fs-md-6 mb-1 mb-md-2 w-md-22n w-17n">底價</p>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <i class="fa-brands fa-ethereum"></i>
+                                <p class="font-squadaOne fs-4 fs-md-3">1.38k</p>
+                            </div>
+                        </li>
+                        <li class="text-center py-4 px-2 border border-start-0 bg-white w-25 d-flex flex-column align-items-center">
+                            <p class="fs-7 fs-md-6 mb-1 mb-md-2 w-md-22n w-17n">總額</p>
+                            <p class="font-squadaOne fs-4 fs-md-3">2.8k</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <!-- 描述欄 價格帶 end-->
+             <!-- 最新上架按鈕 start-->
+            <div class="d-flex justify-content-end mb-md-7 mb-5">
+                <select class="select-custom " aria-label="Default select example">
+                    <option selected>最新上架</option>
+                    <option value="1">最熱門</option>
+                    <option value="2">最低價</option>
+                </select>
+            </div>
+            <!-- 最新上架按鈕 end-->
+            <!-- 藝術品區 start -->
+            <ul class="row gy-4 gy-lg-8 masonryRow " data-masonry='{"percentPosition": true }'>
+                <!-- 最新藝術品1 -->
+                <li class="col-6 col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art20.jpg" alt="這兩隻也太像企鵝了吧">
+                        <div class="overlay__text">
+                            <p class="mb-4">這兩隻也太像企鵝了吧</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">這兩隻也太像企鵝了吧</p>
+                </li>
+                  <!-- 最新藝術品1 -->
+                  <!-- 最新藝術品2 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art21.jpg" alt="3/14情人節外面剛好有兩隻鳥，也在過情人節">
+                        <div class="overlay__text">
+                            <p class="mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">兩情相悅
+                    </p>
+                </li>
+                  <!-- 最新藝術品2 -->
+                    <!-- 最新藝術品3 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art22.jpg" alt="群聚的小鳥們，看起來很開心。">
+                        <div class="overlay__text">
+                            <p class="mb-4">群聚的小鳥們，看起來很開心。</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">群聚的小鳥們
+                    </p>
+                </li>
+                  <!-- 最新藝術品3 -->
+                    <!-- 最新藝術品4 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art23.jpg" alt="與你分享的快樂勝過獨自擁有">
+                        <div class="overlay__text">
+                            <p class="mb-4">與你分享的快樂勝過獨自擁有</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">與你分享的快樂勝過獨自擁有
+                    </p>
+                </li>
+                  <!-- 最新藝術品4 -->
+                    <!-- 最新藝術品5 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art24.jpg" alt="會唱metal的鳥">
+                        <div class="overlay__text">
+                            <p class="mb-4">ROOOOOOCK!</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">會唱metal的鳥
+                    </p>
+                </li>
+                  <!-- 最新藝術品5 -->
+                    <!-- 最新藝術品6 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art25.jpg" alt="一大一小兩個恰恰好">
+                        <div class="overlay__text">
+                            <p class="mb-4">一大一小兩個恰恰好，家有大寶外有小寶。</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">一大一小兩個恰恰好
+                    </p>
+                </li>
+                  <!-- 最新藝術品6 -->
+                    <!-- 最新藝術品7 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art26.jpg" alt="我這樣有美嗎">
+                        <div class="overlay__text">
+                            <p class="mb-4">我這樣有美嗎？</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">我這樣有美嗎
+                    </p>
+                </li>
+                  <!-- 最新藝術品7 -->
+                    <!-- 最新藝術品8 -->
+                <li class="col-6  col-lg-4 ">
+                    <div class="bg-white p-2 p-md-5">
+                        <a href="explore.html">
+                        <div  class="overlay">
+                            <img src="./assets/images/art27.jpg" alt="我真的受傷了">
+                        <div class="overlay__text">
+                            <p class="mb-4">唯一想擁有的人，唯一不可擁有的</p>
+                            <i class="fa-brands fa-ethereum"> <span class="font-squadaOne lh-1 ">300</span></i>
+                        </div>
+                        <p class="font-squadaOne btn btn-outline-dark  triangle  py-2 px-8  fs-5  lh-1 position-absolute end-32 bottom-32  overlay-more" >more</p>
+                      
+                        </div>
+                         </a>
+                    </div>
+                    <p class="fs-7 fs-md-6 fw-normal fw-md-bold py-2 py-md-4 border-bottom border-light border-lg-dark  ">我真的受傷了
+                    </p>
+                </li>
+                  <!-- 最新藝術品8 -->
+                
+                
+    
+               
+            </ul>
+            <!-- 藝術品區 end -->
+           
+        </div>
+          <!-- 篩選主要內容 end-->
     </div>
 </div>
     </main>
@@ -261,6 +479,10 @@
      </p>
     </footer>
     
+    <!-- bs js -->
+    <script src="./assets/js/vendors.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- images loaded -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <!-- masonry  -->
@@ -269,13 +491,11 @@
      <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
+  
       <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-       <!-- swiper -->
-    <script src="./assets/js/vendors.js"></script>
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
     <!-- main js -->
     <script src="./assets/js/all.js"></script>
   </body>
