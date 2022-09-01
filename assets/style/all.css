@@ -8,6 +8,15 @@
   transition: all .3s;
 }
 
+.rotate-0 {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
 input:focus {
   outline: none;
 }
@@ -8056,6 +8065,10 @@ fieldset:disabled .btn {
   top: 8px !important;
 }
 
+.top-12 {
+  top: 12px !important;
+}
+
 .top-16 {
   top: 16px !important;
 }
@@ -8102,6 +8115,10 @@ fieldset:disabled .btn {
 
 .bottom-8 {
   bottom: 8px !important;
+}
+
+.bottom-12 {
+  bottom: 12px !important;
 }
 
 .bottom-16 {
@@ -8152,6 +8169,10 @@ fieldset:disabled .btn {
   left: 8px !important;
 }
 
+.start-12 {
+  left: 12px !important;
+}
+
 .start-16 {
   left: 16px !important;
 }
@@ -8198,6 +8219,10 @@ fieldset:disabled .btn {
 
 .end-8 {
   right: 8px !important;
+}
+
+.end-12 {
+  right: 12px !important;
 }
 
 .end-16 {
@@ -17210,6 +17235,18 @@ sub {
 
 .border-hover-dark:hover {
   border-color: #000;
+}
+
+.btn-close {
+  background-image: url("../images/icon-close.svg");
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+.btn-close:hover {
+  opacity: 0.75;
 }
 
 .form-check {
