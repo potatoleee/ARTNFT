@@ -2,8 +2,14 @@
     padding: 8px 16px;
 }
 .table > :not(:last-child) > :last-child > *{
-    border-bottom-color:$light
+    border-bottom-color:$light;
 }
 th{
     font-weight: 400;
+}
+.table-custom > :not(caption) > * > *{
+    padding:  16px;
+}
+.table-custom > :not(:last-child) > :last-child > *{
+    border-bottom-color:$dark;
 }

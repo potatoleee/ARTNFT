@@ -55,6 +55,20 @@ input:focus{
   }
 }
 
+.triangle-plus{
+       position: relative;
+      width: 0;
+      height: 0;
+      border-right: 32px solid $primary;
+      border-top: 32px solid transparent;
+
+    &.open{
+      border-right: 32px solid  $dark;
+      border-top: 32px solid transparent;
+    }
+ 
+}
+
 .writing-vertical{
     writing-mode: vertical-lr;
 }
@@ -177,6 +191,7 @@ $utilities: map-merge(
           4n: 16px,
           5n: 20px,
           8n: 32px,
+          12n: 48px,
           25: 25%,
           60: 60%,
           50: 50%,
@@ -199,6 +214,7 @@ $utilities: map-merge(
                 ( 
                   1 :1px,
                   8n: 32px,
+                  12n: 48px,
                   17n: 68px,
                   22n: 88px,
                   30: 30%,

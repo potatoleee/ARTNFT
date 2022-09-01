@@ -1,0 +1,14 @@
+#icon-plus{
+    display: block;
+    &.open{
+        display: none;
+    }
+}
+#icon-minus{
+
+    display: none;
+    color: $white;
+    &.open{
+        display: block;
+    }
+}
