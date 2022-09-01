@@ -24,6 +24,18 @@ $(function () {
   $('.fa-angle-up').on('click', function () {
     $(this).toggleClass('rotate-180');
   }); //篩選欄位 擴增icon end
+  //  市價的展開按鈕
+
+  $('#icon-plus').on('click', function (e) {
+    $(this).siblings('.triangle-plus').addClass('open');
+    $('#icon-plus').toggleClass('open');
+    $('#icon-minus').toggleClass('open');
+  });
+  $('#icon-minus').on('click', function (e) {
+    $(this).siblings('.triangle-plus').removeClass('open');
+    $('#icon-plus').removeClass('open');
+    $('#icon-minus').removeClass('open');
+  });
 }); // 首頁輪播start
 
 var indexSwiper = new Swiper('.indexSwiper', {
