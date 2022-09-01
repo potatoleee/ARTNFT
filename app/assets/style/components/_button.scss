@@ -42,3 +42,15 @@
         border-color: $dark;
     }
 }
+
+.btn-close{
+    background-image: url("../images/icon-close.svg");
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    &:hover{
+        opacity: 0.75;
+    }
+    
+}
