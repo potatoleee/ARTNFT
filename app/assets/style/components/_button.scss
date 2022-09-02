@@ -54,3 +54,50 @@
     }
     
 }
+
+
+.btn-wallet{
+
+    border: 1px solid $dark;
+    position: relative;
+    transition: all .3s;
+    background: $white;
+  
+    &::after{
+        font-family: "Font Awesome 5 Free";
+        content: "\f00c";
+        position: absolute;
+        font-weight: 900;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: all .3s;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        top:  0;
+        left: 0;
+        transition: all .3s;
+    }
+    &:hover{
+        border: 1px solid $primary;
+        &::after{
+            opacity: 1;
+            color: $primary;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border:1px solid $primary;
+            top: 0;
+            left: 0;
+        }
+    }
+}

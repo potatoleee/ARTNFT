@@ -21,7 +21,7 @@ $(function() {
 
 
     $('.masonryRow').imagesLoaded().progress( function() {
-      $('.masonryRow').masonry(); // 渲染整體畫面
+      $('.masonryRow').masonry() // 渲染整體畫面
     });
 
     $('.masonryTab').on('shown.bs.tab', function () {
@@ -30,7 +30,7 @@ $(function() {
         msnry.layout(); // 渲染整體畫面
       });
     });
-    
+
     //篩選欄位 擴增icon start
     $('.fa-angle-up').on('click',function(){
       $(this).toggleClass('rotate-180');

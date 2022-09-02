@@ -39,7 +39,7 @@
   background-position: center center;
   background-size: cover;
   //因為字太多會推擠先把高度拉高
-  height: 400px;
+  height: auto;
   @include pad{
     height: 372px;
   }
@@ -66,15 +66,7 @@
       font-size: 24px;
     }
   }
-  a{
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
-    @include phone{
-      right: 12px;
-    }
-    
-  }
+
 }
 .ranking{
   &__no{
