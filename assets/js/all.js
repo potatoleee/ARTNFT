@@ -31,18 +31,13 @@ $(function () {
   $('.fa-angle-up').on('click', function () {
     $(this).toggleClass('rotate-180');
   }); //篩選欄位 擴增icon end
-  //  市價的展開按鈕
+  // 市價三角形折疊 start
 
-  $('#icon-plus').on('click', function (e) {
-    $(this).siblings('.triangle-plus').addClass('open');
-    $('#icon-plus').toggleClass('open');
-    $('#icon-minus').toggleClass('open');
-  });
-  $('#icon-minus').on('click', function (e) {
-    $(this).siblings('.triangle-plus').removeClass('open');
-    $('#icon-plus').removeClass('open');
-    $('#icon-minus').removeClass('open');
-  });
+  $('.triangle-value').on('click', function (e) {
+    $(this).toggleClass('open');
+    $(this).parent().find('#icon-plus').toggleClass('open');
+    $(this).parent().find('#icon-minus').toggleClass('open');
+  }); //市價三角形折疊 end
 }); // 首頁輪播start
 
 var indexSwiper = new Swiper('.indexSwiper', {
