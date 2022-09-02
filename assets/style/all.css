@@ -114,6 +114,16 @@ input:focus {
   /* 穿透上層 icon 以點擊下方按鈕 */
 }
 
+.hover-primary {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover-primary:hover {
+  color: #E6553B;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
