@@ -17,7 +17,7 @@ $(function() {
       $('.masonryRow').imagesLoaded(function () {
         msnry.layout(); // 渲染整體畫面
       });
-    })//使拉伸畫面時瀑布流不會卡住
+    });//使拉伸畫面時瀑布流不會卡住
 
 
     $('.masonryRow').imagesLoaded().progress( function() {
