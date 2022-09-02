@@ -18304,6 +18304,14 @@ main {
   border-color: 1px solid #E6553B;
 }
 
+.search__mobile__modal {
+  top: -112%;
+}
+
+.search__mobile__modal.open {
+  top: 0;
+}
+
 .recommend {
   background-image: url("../images/art01.jpg");
   background-repeat: no-repeat;

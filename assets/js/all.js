@@ -11,6 +11,12 @@ $(function () {
     $('#nav__buger').removeClass('open');
     $('.nav__content__mobile__menu').removeClass('open');
   });
+  $('#search__mobile--open').on('click', function () {
+    $('.search__mobile__modal').addClass('open');
+  });
+  $('#search__mobile--close').on('click', function () {
+    $('.search__mobile__modal').removeClass('open');
+  });
   $(window).on('resize', function () {
     var msnry = Masonry.data($('.masonryRow')[0]);
     $('.masonryRow').imagesLoaded(function () {
