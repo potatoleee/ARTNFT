@@ -30,6 +30,7 @@ $(function() {
         msnry.layout(); // 渲染整體畫面
       });
     });
+    
     //篩選欄位 擴增icon start
     $('.fa-angle-up').on('click',function(){
       $(this).toggleClass('rotate-180');
