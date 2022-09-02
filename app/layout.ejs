@@ -43,9 +43,9 @@
   
         </ul>
 
-     
+        <!-- 手機導覽列 start -->
           <div class="nav__content__mobile d-flex align-items-center gap-5 d-lg-none">
-              <i class="fa-solid fa-magnifying-glass fs-5"></i>
+              <i id="search__mobile--open" class="fa-solid fa-magnifying-glass fs-5"></i>
               <i id="nav__buger" class=" fa-solid fa-bars"></i>
               <i id="nav__close" class="fa-solid fa-xmark "></i>
               <ul class="nav__content__mobile__menu">
@@ -55,7 +55,16 @@
                   <a class="fs-5 bg-primary " href="#walletModal-mobile"  data-bs-toggle="modal">連結錢包</a></li>
               </ul>
            </div>
-         </div>
+           
+           <!-- 手機導覽列 end -->
+          </div>
+          <!-- 手機搜尋視窗  start-->
+          <div class="search__mobile__modal d-flex align-items-center justify-content-between py-4 px-3 bg-light w-100 position-absolute  border-bottom gap-4">
+            <i id="search__mobile--close" class="fa-solid fa-angle-left"></i>
+            <input class="p-0 border-0 bg-light w-100 fs-7 "id="search" type="text" placeholder="搜尋作品名稱、藝術家名稱">
+            <label for="search"><i class="fa-solid fa-magnifying-glass fs-5"></i></label>
+          </div>
+           <!-- 手機搜尋視窗 end-->
       </nav>
       
     </header>

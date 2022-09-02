@@ -4,13 +4,22 @@ $(function() {
       $('#nav__buger').addClass('open');
       $('#nav__close').addClass('open');
       $('.nav__content__mobile__menu').addClass('open');
-    })
+    });
 
     $('#nav__close').on('click',function(){
       $('#nav__close').removeClass('open');
       $('#nav__buger').removeClass('open');
       $('.nav__content__mobile__menu').removeClass('open');
-    })
+    });
+
+    $('#search__mobile--open').on('click',function(){
+      $('.search__mobile__modal').addClass('open');
+    });
+
+    $('#search__mobile--close').on('click',function(){
+      $('.search__mobile__modal').removeClass('open');
+    });
+
 
     $(window).on('resize', () => {
       let msnry = Masonry.data($('.masonryRow')[0]);

@@ -80,9 +80,18 @@ main{
 
 //  wallet
 .wallet-hover{
-    
+
     &:hover{
         border-color: 1px solid $primary;
     }
 }
+
+.search__mobile__modal{
+    top:-112%;
+    &.open{
+        top:0;
+    }
+}
+
+
     
