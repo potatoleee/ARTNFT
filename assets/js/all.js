@@ -11,6 +11,13 @@ $(function () {
     $('#nav__buger').removeClass('open');
     $('.nav__content__mobile__menu').removeClass('open');
   });
+  $(window).on('resize', function () {
+    var msnry = Masonry.data($('.masonryRow')[0]);
+    $('.masonryRow').imagesLoaded(function () {
+      msnry.layout(); // 渲染整體畫面
+    });
+  }); //使拉伸畫面時瀑布流不會卡住
+
   $('.masonryRow').imagesLoaded().progress(function () {
     $('.masonryRow').masonry(); // 渲染整體畫面
   });
