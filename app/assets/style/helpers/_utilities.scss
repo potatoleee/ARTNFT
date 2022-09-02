@@ -96,6 +96,13 @@ input:focus{
 	pointer-events: none;/* 穿透上層 icon 以點擊下方按鈕 */
 }
 
+.hover-primary{
+  transition: all .3s;
+  &:hover{
+    color: $primary;
+  }
+}
+
 
 
 
