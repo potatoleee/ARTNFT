@@ -5,27 +5,27 @@
 @import "../../../node_modules/bootstrap/scss/utilities";
 
 @import "./helpers/utilities";
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import "./helpers/mixin";
+@import "./helpers/helpers";
 
+// base
 @import "./base/base";
 @import './base/typography';
 
-
-
+// components
 @import "./components/nav";
 @import "./components/button";
 @import "./components/form";
 @import "./components/table";
 @import "./components/swiper";
 
-
-
-
+// layout
 @import "./layout/layout.scss";
 
+// pages
 @import "./pages/index.scss";
 @import "./pages/artist.scss";
-@import "./pages/artWorkFilter.scss";
 @import "./pages/marketValue.scss";

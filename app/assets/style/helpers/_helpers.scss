@@ -1,0 +1,102 @@
+.rotate-180{
+    transform: rotate(180deg);
+    transition: all .3s;
+  }
+  .rotate-0{
+    transform: rotate(0deg);
+    transition: all .3s;
+  }
+  
+  
+  .triangle{
+      position: relative;
+      &::after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          border-right: 16px solid $primary;
+          border-top: 16px solid transparent;
+      }
+      &:hover{
+          &::after{
+          border-right: 16px solid $black;
+          border-top: 16px solid transparent;
+          }
+      }
+  }
+  .triangle-dark{
+    position: relative;
+    &::after,&::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 16px solid $dark;
+        border-top: 16px solid transparent;
+       
+    }
+    &::after{
+      top:0;
+     right: 0;
+     transform: rotate(-90deg);
+     
+    }
+    &::before{
+       top: 0;
+       left: 0;
+       transform: rotate(-180deg);
+    }
+  }
+  // 市價三角型
+  .triangle-value{
+        position: relative;
+        width: 0;
+        height: 0;
+        border: 0;
+        border-right: 32px solid $primary;
+        border-top: 32px solid transparent;
+        background-color: transparent;
+        
+  
+      &.open{
+        border-right: 32px solid  $dark;
+        border-top: 32px solid transparent;
+      }
+   
+  }
+  
+  .writing-vertical{
+      writing-mode: vertical-lr;
+  }
+  // 照片辨正方型外框
+  .wrap-square{
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      overflow: hidden;
+  }
+  // 照片辨正方型照片
+  .square-img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+  
+  .pointer-event-none{
+      pointer-events: none;/* 穿透上層 icon 以點擊下方按鈕 */
+  }
+  
+  .hover-primary{
+    transition: all .3s;
+    &:hover{
+      color: $primary;
+    }
+  }
+  
+  
