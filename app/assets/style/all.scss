@@ -23,9 +23,9 @@
 @import "./components/swiper";
 
 // layout
-@import "./layout/layout.scss";
+@import "./layout/layout";
 
 // pages
-@import "./pages/index.scss";
-@import "./pages/artist.scss";
-@import "./pages/marketValue.scss";
+@import "./pages/index";
+@import "./pages/artist";
+@import "./pages/marketValue";
