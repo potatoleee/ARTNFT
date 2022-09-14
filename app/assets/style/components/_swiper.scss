@@ -44,12 +44,35 @@ position: initial;
   img{
     mix-blend-mode:luminosity;
   }
+  
 }
 .swiper-slide-active{
   transform: scale(1.47);
   @include pad{
     transform: scale(1);
   }
+  .swiper-slide-content{
+ 
+    position: absolute;
+    bottom: 94px;
+    left: 24px;
+    width: 48%;
+  
+    @include pad{
+      position: initial;
+      bottom: 24px;
+      width: 100%;
+    }
+  }
+  .swiper-slide-button{
+   
+    bottom: 94px;
+    right: 24px;
+    @include pad{
+      bottom: 124px;
+    }
+  }
+
 }
 .swiper-slide-duplicate-next{
   margin-right: -100px;
@@ -83,6 +106,31 @@ position: initial;
   height: 8px;
 }
 
+.swiper-slide-next, .swiper-slide-prev{
+
+  
+  .swiper-slide-content{
+    display: none;
+    position: absolute;
+    bottom: 94px;
+    left: 24px;
+    width: 48%;
+  
+    @include pad{
+      position: initial;
+      bottom: 24px;
+      width: 100%;
+    }
+  }
+  .swiper-slide-button{
+    display: none;
+    bottom: 94px;
+    right: 24px;
+    @include pad{
+      bottom: 124px;
+    }
+  }
+}
 .swiper-slide-name{
   top:72px;
   left: 24px;
@@ -94,25 +142,6 @@ position: initial;
   }
   &-lg{
     font-size: 64px;
-  }
-}
-.swiper-slide-content{
-  position: absolute;
-  bottom: 94px;
-  left: 24px;
-  width: 48%;
-
-  @include pad{
-    position: initial;
-    bottom: 24px;
-    width: 100%;
-  }
-}
-.swiper-slide-button{
-  bottom: 94px;
-  right: 24px;
-  @include pad{
-    bottom: 124px;
   }
 }
 

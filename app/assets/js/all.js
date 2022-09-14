@@ -62,11 +62,13 @@ var  indexSwiper = new Swiper('.indexSwiper', {
     slidesPerView: 1,
     spaceBetween: 0,
 	  centeredSlides: true,
+    
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+
   },
 
   // Navigation arrows

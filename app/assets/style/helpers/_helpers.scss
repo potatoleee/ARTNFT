@@ -50,23 +50,7 @@
        transform: rotate(-180deg);
     }
   }
-  // 市價三角型
-  .triangle-value{
-        position: relative;
-        width: 0;
-        height: 0;
-        border: 0;
-        border-right: 32px solid $primary;
-        border-top: 32px solid transparent;
-        background-color: transparent;
-        
   
-      &.open{
-        border-right: 32px solid  $dark;
-        border-top: 32px solid transparent;
-      }
-   
-  }
   
   .writing-vertical{
       writing-mode: vertical-lr;
